@@ -105,10 +105,13 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/*
+// I decided that this is uh too laggy so ye
+
 button:not(.shiki-btn):hover, div[class*="reaction-"]:hover, div[class*="popout"]:hover, div[class*="clickable"]:hover, div[class*="listItem"]:hover, li[class*="containerDefault"]:hover, [class*="item"]:not([class*="tabBarItem"]):hover, [class*="channel-"]:hover {
   animation: 1s shake infinite;
 }
-/* violent impluses on hover made by 919181792219639808/laptopcat. */
+// violent impluses on hover made by 919181792219639808/laptopcat. */
 
 
 a[href="https://support.discord.com"], /* help button :skull: */
