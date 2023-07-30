@@ -64,7 +64,6 @@
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: hell;
   --code-font: Consolas;
   --channels-width: 220px;
   --members-width: 240px;
@@ -123,7 +122,7 @@ button[aria-label="Send a gift"] /* (send gift button) no, im not wasting my mon
   display: none;
 }
 /* Bullshit-be-gone, (actually called "hide a bunch of random things that 99% of people dont even use" but idc, made by 1122939347335913582/whoman0385, and modified to my liking. */
-
+/*
 
 [class^="accountProfileCard"] [class*="fieldSpacer"] h3+div:has(button) * { color: transparent!important; }
 [class^="accountProfileCard"] [class*="fieldSpacer"]:hover h3+div * { color: var(--header-primary)!important; }
@@ -136,7 +135,7 @@ button[aria-label="Send a gift"] /* (send gift button) no, im not wasting my mon
     content: "[redacted]";
     font-size: initial; }
 [class^="accountProfileCard"] [class*="fieldSpacer"]:hover span:before, [class^="userSettingsSecurity-"] [class*="description-"] { display: none; }
-/* idiot protection (so I dont dox the fuck out of myself lol), made by 99914384989519872/pointy. */
+/* idiot protection (so I dont dox the fuck out of myself lol), made by 99914384989519872/pointy. | UPDATE IT FUCKING MURDERS PERF SOMEHOW??? */
 
 
 /* oneko, looks kinda odd with 47px */
@@ -163,7 +162,7 @@ display: none;
 /* Both made by 457064661582479361/phymos */
 
 
-/* remove channel emojis, based. */
+/* remove channel emojis | based. */
 .channelEmoji-NJOZuV {
   display: none;
 }
@@ -175,8 +174,9 @@ display: none;
 .channelEmoji-KaXu_c {
   display: none;
 }
-/*
- Made by 208696987082555393/ellio_t. 
+
+
+ /* Made by 208696987082555393/ellio_t.  */
 
 
 @keyframes dvd-x {
@@ -207,12 +207,12 @@ display: none;
   background-repeat: no-repeat;
   pointer-events: none;
   filter: hue-rotate(calc(var(--cx) + var(--cy)));
-  animation: dvd-x infinite linear 11s alternate-reverse,
-             dvd-y infinite linear 7s alternate-reverse,
-             dvd-cx infinite steps(2, jump-both) 22s,
-             dvd-cy infinite steps(2, jump-both) 14s;
+  animation: dvd-x infinite linear .00001999999999s alternate-reverse,
+             dvd-y infinite linear .00000711s alternate-reverse,
+             dvd-cx infinite steps(10, jump-both) 2s,
+             dvd-cy infinite steps(10, jump-both) 1s;
 }
- Most essential CSS in the world, made by 645877523481362432/hnml.  */
+ /* Most essential CSS in the world, made by 645877523481362432/hnml.  */
 
 /*
 
