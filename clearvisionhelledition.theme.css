@@ -250,6 +250,25 @@ display: none;
 }
  /* Most essential CSS in the world, made by 645877523481362432/hnml.  */
 
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.message-2CShn3:not(:has([class*="isSending"])) {
+  animation: slide-up 0.6s ease;
+}
+
+.message-2CShn3:has([class*="isSending"]) {
+  display: none;
+}
+/* Sorry, but I lost track of who made this. */
 
 /*
 
