@@ -268,6 +268,11 @@ display: none;
 .message-2CShn3:has([class*="isSending"]) {
   display: none;
 }
+
+* {font-family: Hack Nerd Font Propo !important}
+.messageContent-2t3eCI {font-size: 14px}
+.textArea-2CLwUE {font-size: 14px !important}
+
 /* Sorry, but I lost track of who made this. */
 
 /*
