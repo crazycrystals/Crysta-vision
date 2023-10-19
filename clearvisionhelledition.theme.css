@@ -177,25 +177,6 @@ display: none;
 
 
  /* Made by 208696987082555393/ellio_t.  */
-
-
-@keyframes dvd-x {
-    from {left: 0px;}
-    to {left: calc(100% - 110px);}
-}
-@keyframes dvd-y {
-    from {top: 0px;}
-    to {top: calc(100% - 50px);}
-}
-@keyframes dvd-cx {
-    from {--cx: 0deg;}
-    to {--cx: 80deg;}
-}
-@keyframes dvd-cy {
-    from {--cy: 0deg;}
-    to {--cy: 140deg;}
-}
-
 /* I prefer my skidded ver
 .notAppAsidePanel-3yzkgB::before {
   background-image: url(https://cdn.discordapp.com/attachments/714888484565024844/1110313146347954256/dvd-logo-png-33.png);
@@ -215,22 +196,6 @@ display: none;
              dvd-cy infinite steps(10, jump-both) 1s;
 }
  /* Most essential CSS in the world, made by 645877523481362432/hnml.  */
-@keyframes crystals-x {
-    from {left: 0px;}
-    to {left: calc(100% - 110px);}
-}
-@keyframes crystals-y {
-    from {top: 0px;}
-    to {top: calc(100% - 50px);}
-}
-@keyframes crystals-cx {
-    from {--cx: 0deg;}
-    to {--cx: 80deg;}
-}
-@keyframes crystals-cy {
-    from {--cy: 0deg;}
-    to {--cy: 140deg;}
-}
 .notAppAsidePanel-3yzkgB::before {
   background-image: url(https://cdn.discordapp.com/avatars/402896111255289856/5375082580faeebff19045abcfab4966.webp);
   content: "";
