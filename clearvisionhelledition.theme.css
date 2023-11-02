@@ -143,7 +143,310 @@ display: none;
   display: none;
 }
 
+/* show the url masked links take you to in the message 
+** (for very long links the preview will also be very long) */
+.anchor_c8ddc0[title$=")"]::after {
+    font-size: 0.7rem;
+    content: " (" attr(href) ")";
+    filter: grayscale(0.4);
+}
+/* Made by Hu Tao, with the user ID of 1006638529746583752. 
 
+
+/* Replace reload animation of discord icon with shiggy */
+/*
+* @name Shiggy loader
+* @author blisterexe
+* @description funny shiggy loading icon for discord 
+* @version 1.0
+*/
+
+:root .container__4bde3 > .content__0e954 {
+  position: relative;
+}
+:root .container__4bde3 > .content__0e954 .ready__61f2f {
+  display: none;
+}
+:root .container__4bde3 > .content__0e954 .ready__61f2f + .text__32559 {
+  top: 50px;
+}
+:root .container__4bde3 > .content__0e954::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  background: url("https://github.com/Blisterexe/shiggy-loader/blob/main/shiggy.gif?raw=true") center/80% no-repeat !important;
+  image-rendering: pixelated;
+}
+
+
+/* LOTS OF ONEKO */
+/* Made by 406084422308331522, or unestrogenisedding. */
+@keyframes sleep {
+	0%,
+	50% {
+		background-position: -64px 0;
+	}
+	50.00001%,
+	100% {
+		background-position: -64px -32px;
+	}
+}
+@keyframes alert {
+	0%,
+	50% {
+		background-position: -224px -96px;
+	}
+	50.00001%,
+	100% {
+		background-position: -96px -96px;
+	}
+}
+@keyframes runright {
+	0%,
+	50% {
+		background-position: -96px 2px;
+	}
+	50.00001%,
+	100% {
+		background-position: -96px -30px;
+	}
+}
+@keyframes runleft {
+	0%,
+	50% {
+		background-position: -128px -62px;
+	}
+	50.00001%,
+	100% {
+		background-position: -128px -94px;
+	}
+}
+@keyframes scratchright {
+	0%,
+	50% {
+		background-position: -64px -62px;
+	}
+	50.00001%,
+	100% {
+		background-position: -64px -94px;
+	}
+}
+@keyframes scratchleft {
+	0%,
+	50% {
+		background-position: -128px 2px;
+	}
+	50.00001%,
+	100% {
+		background-position: -128px -30px;
+	}
+}
+@keyframes scratchup {
+	0%,
+	50% {
+		background-position: 0 0;
+	}
+	50.00001%,
+	100% {
+		background-position: 0 -32px;
+	}
+}
+@keyframes scratchdown {
+	0%,
+	50% {
+		background-position: -224px -30px;
+	}
+	50.00001%,
+	100% {
+		background-position: -192px -62px;
+	}
+}
+@keyframes spinleft {
+	0%,
+	20% {
+		background-position: -96px -30px;
+	}
+	20.00001%,
+	40% {
+		background-position: -160px -62px;
+	}
+	40.00001%,
+	60% {
+		background-position: -224px -62px;
+	}
+	60.00001%,
+	80% {
+		background-position: -192px -30px;
+	}
+	80.00001%,
+	100% {
+		background-position: -128px -94px;
+	}
+}
+@keyframes spinright {
+	0%,
+	20% {
+		background-position: -128px -94px;
+	}
+	20.00001%,
+	40% {
+		background-position: -192px -30px;
+	}
+	40.00001%,
+	60% {
+		background-position: -224px -62px;
+	}
+	60.00001%,
+	80% {
+		background-position: -160px -62px;
+	}
+	80.00001%,
+	100% {
+		background-position: -96px -30px;
+	}
+}
+@keyframes wakeup {
+	0%,
+	20% {
+		background-position: -160px 0;
+	}
+	20.00001%,
+	40% {
+		background-position: -192px 0;
+	}
+	40.00001%,
+	60% {
+		background-position: -224px 0;
+	}
+	60.00001%,
+	80% {
+		background-position: -96px -64px;
+	}
+	80.00001%,
+	100% {
+		background-position: -96px -96px;
+	}
+}
+@keyframes gotosleep {
+	0%,
+	20% {
+		background-position: -96px -96px;
+	}
+	20.00001%,
+	40% {
+		background-position: -96px -64px;
+	}
+	40.00001%,
+	60% {
+		background-position: -224px 0;
+	}
+	60.00001%,
+	80% {
+		background-position: -192px 0;
+	}
+	80.00001%,
+	100% {
+		background-position: -160px 0;
+	}
+}
+/*Hide original home icon*/
+[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_] {
+	display: none;
+}
+/*Add oneko*/
+[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_]:before {
+	content: "";
+	background-image: var(--onekohomeicon-skin, url(https://raw.githubusercontent.com/vencordcss/onekocord/main/onekoskins/default.png));
+	animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekohomeicon-sleep-duration, 1s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-sleep-animation, sleep);
+	image-rendering: var(--onekohomeicon-rendering, pixelated);
+	width: 32px;
+	height: 32px;
+	transition: 0.2s ease;
+	opacity: 0.7;
+}
+/*Wake oneko up and start hover animation on hover*/
+[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_]:hover:before {
+	animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekohomeicon-hovered-duration, 0.3s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-hovered-animation, alert);
+	opacity: 1;
+}
+/*Wake oneko up and start selected animation when opening dms*/
+[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_]:not(:hover):before {
+	animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekohomeicon-selected-duration, 0.3s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-selected-animation, runright);
+	opacity: 1;
+}
+/*Add oneko*/
+[class^=channelTextArea_]:before {
+	content: "";
+	background-image: var(--onekomessagebar-skin, url(https://raw.githubusercontent.com/vencordcss/onekocord/main/onekoskins/default.png));
+	animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekomessagebar-sleep-duration, 2s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-sleep-animation, sleep);
+	image-rendering: var(--onekomessagebar-rendering, pixelated);
+	width: 32px;
+	height: 32px;
+    position: absolute;
+	top: var(--onekomessagebar-position-top, -30px);
+	left: var(--onekomessagebar-position-left, 10px);
+	z-index: var(--onekomessagebar-z-index, 1);    
+}
+/*Wake oneko up on hover and start hover animation*/
+[class^=channelTextArea_]:hover:before {
+  animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards var(--onekomessagebar-wakeup-animation, wakeup), var(--onekomessagebar-hovered-duration, 0.3s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-hovered-animation, alert)
+}
+/*Wake oneko up when message bar is selected and start selected animation*/
+[class^=channelTextArea_]:has(:focus):before {
+	animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards var(--onekomessagebar-wakeup-animation, wakeup), var(--onekomessagebar-selected-duration, 0.3s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-selected-animation, alert);
+}
+/*Hide orignal toolbox icon*/
+.vc-toolbox-btn>svg {
+    display: none;
+}
+/*Make toolbox container the correct size*/
+.vc-toolbox-btn {
+    width: 24px;
+    height: 24px;
+}
+/*Add oneko*/
+.vc-toolbox-btn:before {
+    content: "";
+    background: var(--onekotoolbox-skin, url(https://raw.githubusercontent.com/vencordcss/onekocord/main/onekoskins/default.png));
+    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekotoolbox-sleep-duration, 2s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-sleep-animation, sleep);
+    image-rendering: var(--onekotoolbox-rendering, pixelated);
+    width: 32px;
+    height: 32px;  
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+    transition: 0.2s ease;
+    opacity: 0.7;
+}
+/*Wake oneko up and start hover animation on hover*/
+.vc-toolbox-btn:hover:before {
+    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekotoolbox-hovered-duration, 0.3s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-hovered-animation, alert);
+    opacity: 1;
+}
+/*Wake oneko up when selected and start selected animation */
+.vc-toolbox-btn:is([class*=selected_]) {
+    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards var(--onekotoolbox-wakeup-animation, wakeup), var(--onekotoolbox-selected-duration, 0.3s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-selected-animation, alert);
+    opacity: 1;
+}
+
+/* F53, 280411966126948353. */
+/* No, I don't want to make a thread from a chain of more than 2 replies */
+[class*="threadSuggestionBar_"] {
+  display:none;
+}
+
+/* show full about me */
+[style="-webkit-line-clamp: 6;"] {
+  -webkit-line-clamp: 10000000 !important;
+}
+
+/* not circle */
+[class^="avatar_"] {
+  border-radius: 25%;
+}
 
 /*
 
