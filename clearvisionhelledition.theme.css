@@ -122,44 +122,12 @@ button[aria-label="Send a gift"] /* (send gift button) no, im not wasting my mon
   display: none;
 }
 /* Bullshit-be-gone, (actually called "hide a bunch of random things that 99% of people dont even use" but idc, made by 1122939347335913582/whoman0385, and modified to my liking. */
-/*
-
-[class^="accountProfileCard"] [class*="fieldSpacer"] h3+div:has(button) * { color: transparent!important; }
-[class^="accountProfileCard"] [class*="fieldSpacer"]:hover h3+div * { color: var(--header-primary)!important; }
-[class^="accountProfileCard"] [class*="fieldSpacer"]:hover h3+div button * {
-    color: var(--text-link)!important;
-    -webkit-text-security: none; }
-[class^="accountProfileCard"] [class*="fieldSpacer"]:hover span:has(button[aria-label^="Reveal"]) { -webkit-text-security: disc; }
-[class^="accountProfileCard"] [class*="fieldSpacer"] span:has(button):before {
-    color: var(--header-secondary);
-    content: "[redacted]";
-    font-size: initial; }
-[class^="accountProfileCard"] [class*="fieldSpacer"]:hover span:before, [class^="userSettingsSecurity-"] [class*="description-"] { display: none; }
-/* idiot protection (so I dont dox the fuck out of myself lol), made by 99914384989519872/pointy. | UPDATE IT FUCKING MURDERS PERF SOMEHOW??? */
-
-
-/* oneko, looks kinda odd with 47px */
-[class^="panels-3wFtMD"]::before {
-    content: "";
-    width: 47px;
-    height: 47px;
-    left: 185px;
-    margin-top: -47px;
-    position: absolute;
-    background-image: url('https://cdn.discordapp.com/emojis/1091853954045972530.gif?size=48&name=oneko_zzz&quality=lossless');
-}
-/* "user panel but is not boring", made by 568175726617165824/zeylogger. */
-
 
 /*Hiding Useless Discoverable Badge*/
 .communityInfo-3YsNIn{
 display: none;
 }
-/*Disabling Library & Nitro & Birthday Buttons on DM*/
-.privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"] {
-display: none;
-}
-/* Both made by 457064661582479361/phymos */
+/* made by 457064661582479361/phymos */
 
 
 /* remove channel emojis | based. */
@@ -176,69 +144,6 @@ display: none;
 }
 
 
- /* Made by 208696987082555393/ellio_t.  */
-/* I prefer my skidded ver
-.notAppAsidePanel-3yzkgB::before {
-  background-image: url(https://cdn.discordapp.com/attachments/714888484565024844/1110313146347954256/dvd-logo-png-33.png);
-  content: "";
-  width: 110px;
-  height: 50px;
-  z-index: 999;
-  position: absolute;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  filter: hue-rotate(calc(var(--cx) + var(--cy)));
-  animation: dvd-x infinite linear .00001999999999s alternate-reverse,
-             dvd-y infinite linear .00000711s alternate-reverse,
-             dvd-cx infinite steps(10, jump-both) 2s,
-             dvd-cy infinite steps(10, jump-both) 1s;
-}
- /* Most essential CSS in the world, made by 645877523481362432/hnml.  */
-.notAppAsidePanel-3yzkgB::before {
-  background-image: url(https://cdn.discordapp.com/avatars/402896111255289856/5375082580faeebff19045abcfab4966.webp);
-  content: "";
-  width: 110px;
-  height: 50px;
-  z-index: 999;
-  position: absolute;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  filter: hue-rotate(calc(var(--cx) + var(--cy)));
-  animation: crystals-x infinite linear .0001999999999s alternate-reverse,
-             crystals-y infinite linear .0000711s alternate-reverse,
-             crystals-cx infinite steps(10, jump-both) 2s,
-             crystals-cy infinite steps(10, jump-both) 1s;
-}
- /* Most essential CSS in the world, made by 645877523481362432/hnml.  */
-
-@keyframes slide-up {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.message-2CShn3:not(:has([class*="isSending"])) {
-  animation: slide-up 0.6s ease;
-}
-
-.message-2CShn3:has([class*="isSending"]) {
-  display: none;
-}
-
-* {font-family: Hack Nerd Font Propo !important}
-.messageContent-2t3eCI {font-size: 14px}
-.textArea-2CLwUE {font-size: 14px !important}
-
-/* Sorry, but I lost track of who made this. */
 
 /*
 
