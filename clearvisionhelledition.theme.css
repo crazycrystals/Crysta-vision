@@ -443,11 +443,6 @@ display: none;
   -webkit-line-clamp: 10000000 !important;
 }
 
-/* not circle */
-[class^="avatar_"] {
-  border-radius: 25%;
-}
-
 /*
 
 All CSS has been taken from the vencord 'css-snippets' channel, which states the following:
