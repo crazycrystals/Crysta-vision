@@ -444,7 +444,7 @@ display: none;
 }
 
 /* Usually I don't like simply linking, but in this case its probably good to just do so. */
-@import url(https://raw.githubusercontent.com/MrDiamondDog/noUglyIconsTheme/master/theme.css);
+@import url('https://raw.githubusercontent.com/MrDiamondDog/noUglyIconsTheme/master/theme.css');
 
 
 /*
