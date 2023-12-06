@@ -443,6 +443,9 @@ display: none;
   -webkit-line-clamp: 10000000 !important;
 }
 
+/* Usually I don't like simply linking, but in this case its probably good to just do so. */
+@import url(//raw.githubusercontent.com/MrDiamondDog/noUglyIconsTheme/master/theme.css);
+
 /*
 
 All CSS has been taken from the vencord 'css-snippets' channel, which states the following:
