@@ -461,8 +461,3 @@ Don't post off topic things. If you wanna discuss a specific snippet, please mak
 */
 
 
-// skidded from https://github.com/ClearVision/Addons, https://clearvision.github.io/Addons/transparency.css.
-
-.appMount_fae9dd, body, .bg__7adbf {background: transparent;}
-/* Hides background when uploading an image */
-.backdrop__7e89b {opacity: 0 !important;}
