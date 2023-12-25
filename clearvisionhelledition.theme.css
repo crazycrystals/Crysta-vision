@@ -18,8 +18,8 @@
   --danger-color: #982929;
   --url-color: var(--main-color);
   --undefined: 0;
-  --background-image: url('https://raw.githubusercontent.com/crazycrystals/Crysta-vision/main/wallpaper.jpeg');
-  --background-shading: 100%;
+//  --background-image: url('https://raw.githubusercontent.com/crazycrystals/Crysta-vision/main/wallpaper.jpeg');
+  --background-shading: 50%;
   --background-position: center;
   --background-size: cover;
   --background-repeat: no-repeat;
