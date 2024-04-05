@@ -85,10 +85,6 @@
   --bd-blue-active: var(--hover-color);
 }
 
-/* goofy message drop in css */
-[data-list-item-id*="chat-messages_"]:not(:has(> [class*="contents"] > [class*="isSending"])) {
-  animation: slide-up 0.6s;
-}
 /* Slide messages made by 406084422308331522/coolesding, and assisted for ghost messages to be removed by 406028027768733696/sunn_ie. */
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -151,35 +147,6 @@ display: none;
     filter: grayscale(0.4);
 }
 /* Made by Hu Tao, with the user ID of 1006638529746583752. 
-
-
-/* Replace reload animation of discord icon with shiggy */
-/*
-* @name Shiggy loader
-* @author blisterexe
-* @description funny shiggy loading icon for discord 
-* @version 1.0
-*/
-
-:root .container__4bde3 > .content__0e954 {
-  position: relative;
-}
-:root .container__4bde3 > .content__0e954 .ready__61f2f {
-  display: none;
-}
-:root .container__4bde3 > .content__0e954 .ready__61f2f + .text__32559 {
-  top: 50px;
-}
-:root .container__4bde3 > .content__0e954::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: calc(50% - 100px);
-  width: 200px;
-  height: 200px;
-  background: url("https://github.com/Blisterexe/shiggy-loader/blob/main/shiggy.gif?raw=true") center/80% no-repeat !important;
-  image-rendering: pixelated;
-}
 
 
 /* LOTS OF ONEKO */
