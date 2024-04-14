@@ -414,6 +414,51 @@ display: none;
 @import url('https://raw.githubusercontent.com/MrDiamondDog/noUglyIconsTheme/master/theme.css');
 
 
+// Revert the change to codeblock font
+// TheKodeToad
+// 706152404072267788
+:root {
+    --font-code: "Consolas", "Andale Mono WT", "Andale Mono",
+        "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+        "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Monaco",
+        "Courier New", "Courier", "monospace";
+}
+
+
+
+// Hide this and future signups
+// _kokussz_
+// 1063532834805002271
+[data-list-id="guildsnav"]>div>div>div:has(>div[style*="background: url(\"https://cdn.discordapp.com/assets/signups"]) {display:none}
+
+/*
+Acrylic popups
+I tried to make every popup transparent
+_kokussz_
+1063532834805002271
+*/
+@import url('https://s-k-y-l-i.github.io/discord-themes/Theme%20code/transparent-popups.css');
+
+/* Config */
+:root{
+    --blur-popup: 40px; /*Popup blur size*/
+    --opacity-popup: 0.6; /*Popup background opacity*/  
+    --radius-popup: 40px; /*Popup border radius*/
+    --radius-context: 20px; /*Context menu popups radius*/
+    /*--pop-up-color: black; /*uncomment for custom Popup color*/ 
+    /*--context-menu-border: 1px solid red; /*uncomment for custom border*/
+}
+
+
+// This snippet hides the annoying "NEW" badge for the shop:
+// Mensh123
+// 736188952742199316
+.textBadge__45d79{
+  display: none;
+}
+
+
+
 /*
 
 All CSS has been taken from the vencord 'css-snippets' channel, which states the following:
@@ -426,5 +471,6 @@ Don't post off topic things. If you wanna discuss a specific snippet, please mak
 "
 
 */
+
 
 
