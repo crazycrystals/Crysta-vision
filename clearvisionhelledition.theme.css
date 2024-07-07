@@ -85,338 +85,79 @@
   --bd-blue-active: var(--hover-color);
 }
 
-/* Slide messages made by 406084422308331522/coolesding, and assisted for ghost messages to be removed by 406028027768733696/sunn_ie. */
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+
+
+
+
 
 /*
-// it was NOT laggy. */
-button:not(.shiki-btn):hover, div[class*="reaction-"]:hover, div[class*="popout"]:hover, div[class*="clickable"]:hover, div[class*="listItem"]:hover, li[class*="containerDefault"]:hover, [class*="item"]:not([class*="tabBarItem"]):hover, [class*="channel-"]:hover {
-  animation: 1s shake infinite;
-}
- /* violent impluses on hover made by 919181792219639808/laptopcat. */
+
+All CSS below has been taken from the vencord 'css-snippets' channel, which states the following:
+
+"
+imports must be from a github domain, not third party domains (for privacy and security reasons).
+
+imports must specify the https protocol. do not omit it.
+
+By posting in this channel you agree to license your css snippet under the https://creativecommons.org/share-your-work/public-domain/cc0/ license, which means anyone is allowed to use your snippet however they like with no attribution.
+
+dont post low effort snippets (single display: none for example).
+Don't post off topic things. If you wanna discuss a specific snippet, please make a thread
+"
+
+*/
 
 
-a[href="https://support.discord.com"], /* help button :skull: */
-/* .recentsIcon-F3eO1o, (inbox button) I use this :sob: */
-.nowPlayingColumn-1eCBCN, /* (active now sidebar) true who the hell uses this lmao */
-.newChannel-3q3LPr,  /* (the "NEW" text thats next to channels) this is just obnoxious come on idgaf that a new channel was added I'll notice it and ill go there if people are fucking talking*/
-/* div[aria-label*="Show User Profile"], (user profile button) slightly useful for viewing your own user profile, keeping :trol:*/
-button[aria-label="Send a gift"] /* (send gift button) no, im not wasting my money to buy OTHERS nitro, I barely do so for myself.  */
-{ 
-  display: none;
-}
-/* Bullshit-be-gone, (actually called "hide a bunch of random things that 99% of people dont even use" but idc, made by 1122939347335913582/whoman0385, and modified to my liking. */
 
-/*Hiding Useless Discoverable Badge*/
-.communityInfo-3YsNIn{
-display: none;
+/* Un-Simplify Bios in Simplified Profiles by 441619508801830912 */
+[class^="descriptionClamp_"] {
+    display: block!important;
 }
-/* made by 457064661582479361/phymos */
 
 
-/* remove channel emojis | based. */
-.channelEmoji-NJOZuV {
-  display: none;
+
+/* turns all the messages in discord rgb cycling bc why not by 381930817661698051 , probably gonna remove */
+
+/*turns all messages into rainbow coloring*/
+.markup_d6076c {
+  animation: colorRotate 6s linear 0s infinite;
+}
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
 }
 
-.channelName-3KPsGw {
-  padding: 2px;
-}
 
-.channelEmoji-KaXu_c {
-  display: none;
-}
-
-/* show the url masked links take you to in the message 
-** (for very long links the preview will also be very long) */
-.anchor_c8ddc0[title$=")"]::after {
-    font-size: 0.7rem;
-    content: " (" attr(href) ")";
-    filter: grayscale(0.4);
-}
-/* Made by Hu Tao, with the user ID of 1006638529746583752. 
+/* no proper name, by 165098921071345666. Changes names that you cant read */
+[class*=username_][style],
+.mention[style],
+[class*=membersGroup_] [style]
+ { filter:contrast(.2) brightness(1.2) saturate(500%); }
 
 
-/* LOTS OF ONEKO */
-/* Made by 406084422308331522, or unestrogenisedding. */
-@keyframes sleep {
-	0%,
-	50% {
-		background-position: -64px 0;
-	}
-	50.00001%,
-	100% {
-		background-position: -64px -32px;
-	}
-}
-@keyframes alert {
-	0%,
-	50% {
-		background-position: -224px -96px;
-	}
-	50.00001%,
-	100% {
-		background-position: -96px -96px;
-	}
-}
-@keyframes runright {
-	0%,
-	50% {
-		background-position: -96px 2px;
-	}
-	50.00001%,
-	100% {
-		background-position: -96px -30px;
-	}
-}
-@keyframes runleft {
-	0%,
-	50% {
-		background-position: -128px -62px;
-	}
-	50.00001%,
-	100% {
-		background-position: -128px -94px;
-	}
-}
-@keyframes scratchright {
-	0%,
-	50% {
-		background-position: -64px -62px;
-	}
-	50.00001%,
-	100% {
-		background-position: -64px -94px;
-	}
-}
-@keyframes scratchleft {
-	0%,
-	50% {
-		background-position: -128px 2px;
-	}
-	50.00001%,
-	100% {
-		background-position: -128px -30px;
-	}
-}
-@keyframes scratchup {
-	0%,
-	50% {
-		background-position: 0 0;
-	}
-	50.00001%,
-	100% {
-		background-position: 0 -32px;
-	}
-}
-@keyframes scratchdown {
-	0%,
-	50% {
-		background-position: -224px -30px;
-	}
-	50.00001%,
-	100% {
-		background-position: -192px -62px;
-	}
-}
-@keyframes spinleft {
-	0%,
-	20% {
-		background-position: -96px -30px;
-	}
-	20.00001%,
-	40% {
-		background-position: -160px -62px;
-	}
-	40.00001%,
-	60% {
-		background-position: -224px -62px;
-	}
-	60.00001%,
-	80% {
-		background-position: -192px -30px;
-	}
-	80.00001%,
-	100% {
-		background-position: -128px -94px;
-	}
-}
-@keyframes spinright {
-	0%,
-	20% {
-		background-position: -128px -94px;
-	}
-	20.00001%,
-	40% {
-		background-position: -192px -30px;
-	}
-	40.00001%,
-	60% {
-		background-position: -224px -62px;
-	}
-	60.00001%,
-	80% {
-		background-position: -160px -62px;
-	}
-	80.00001%,
-	100% {
-		background-position: -96px -30px;
-	}
-}
-@keyframes wakeup {
-	0%,
-	20% {
-		background-position: -160px 0;
-	}
-	20.00001%,
-	40% {
-		background-position: -192px 0;
-	}
-	40.00001%,
-	60% {
-		background-position: -224px 0;
-	}
-	60.00001%,
-	80% {
-		background-position: -96px -64px;
-	}
-	80.00001%,
-	100% {
-		background-position: -96px -96px;
-	}
-}
-@keyframes gotosleep {
-	0%,
-	20% {
-		background-position: -96px -96px;
-	}
-	20.00001%,
-	40% {
-		background-position: -96px -64px;
-	}
-	40.00001%,
-	60% {
-		background-position: -224px 0;
-	}
-	60.00001%,
-	80% {
-		background-position: -192px 0;
-	}
-	80.00001%,
-	100% {
-		background-position: -160px 0;
-	}
-}
-/*Hide original home icon*/
-[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_] {
-	display: none;
-}
-/*Add oneko*/
-[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_]:before {
-	content: "";
-	background-image: var(--onekohomeicon-skin, url(https://raw.githubusercontent.com/vencordcss/onekocord/main/onekoskins/default.png));
-	animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekohomeicon-sleep-duration, 1s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-sleep-animation, sleep);
-	image-rendering: var(--onekohomeicon-rendering, pixelated);
-	width: 32px;
-	height: 32px;
-	transition: 0.2s ease;
-	opacity: 0.7;
-}
-/*Wake oneko up and start hover animation on hover*/
-[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_]:hover:before {
-	animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekohomeicon-hovered-duration, 0.3s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-hovered-animation, alert);
-	opacity: 1;
-}
-/*Wake oneko up and start selected animation when opening dms*/
-[class=data-list-item-id="guildsnav___home"]>[class^=childWrapper_]:not(:hover):before {
-	animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekohomeicon-selected-duration, 0.3s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-selected-animation, runright);
-	opacity: 1;
-}
-/*Add oneko*/
-[class^=channelTextArea_]:before {
-	content: "";
-	background-image: var(--onekomessagebar-skin, url(https://raw.githubusercontent.com/vencordcss/onekocord/main/onekoskins/default.png));
-	animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekomessagebar-sleep-duration, 2s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-sleep-animation, sleep);
-	image-rendering: var(--onekomessagebar-rendering, pixelated);
-	width: 32px;
-	height: 32px;
-    position: absolute;
-	top: var(--onekomessagebar-position-top, -30px);
-	left: var(--onekomessagebar-position-left, 10px);
-	z-index: var(--onekomessagebar-z-index, 1);    
-}
-/*Wake oneko up on hover and start hover animation*/
-[class^=channelTextArea_]:hover:before {
-  animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards var(--onekomessagebar-wakeup-animation, wakeup), var(--onekomessagebar-hovered-duration, 0.3s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-hovered-animation, alert)
-}
-/*Wake oneko up when message bar is selected and start selected animation*/
-[class^=channelTextArea_]:has(:focus):before {
-	animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards var(--onekomessagebar-wakeup-animation, wakeup), var(--onekomessagebar-selected-duration, 0.3s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-selected-animation, alert);
-}
-/*Hide orignal toolbox icon*/
-.vc-toolbox-btn>svg {
-    display: none;
-}
-/*Make toolbox container the correct size*/
-.vc-toolbox-btn {
-    width: 24px;
-    height: 24px;
-}
-/*Add oneko*/
-.vc-toolbox-btn:before {
-    content: "";
-    background: var(--onekotoolbox-skin, url(https://raw.githubusercontent.com/vencordcss/onekocord/main/onekoskins/default.png));
-    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekotoolbox-sleep-duration, 2s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-sleep-animation, sleep);
-    image-rendering: var(--onekotoolbox-rendering, pixelated);
-    width: 32px;
-    height: 32px;  
-    position: absolute;
-    bottom: -4px;
-    right: 0px;
-    transition: 0.2s ease;
-    opacity: 0.7;
-}
-/*Wake oneko up and start hover animation on hover*/
-.vc-toolbox-btn:hover:before {
-    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekotoolbox-hovered-duration, 0.3s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-hovered-animation, alert);
-    opacity: 1;
-}
-/*Wake oneko up when selected and start selected animation */
-.vc-toolbox-btn:is([class*=selected_]) {
-    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards var(--onekotoolbox-wakeup-animation, wakeup), var(--onekotoolbox-selected-duration, 0.3s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-selected-animation, alert);
-    opacity: 1;
+
+/* transparent discord loading by 1177484931623026769 */
+/*discord loading page*/
+.container_e40c16.fixClipping_c7e9c6  {
+  background: 0 0;
+  backdrop-filter: blur(5px);
 }
 
-/* F53, 280411966126948353. */
-/* No, I don't want to make a thread from a chain of more than 2 replies */
-[class*="threadSuggestionBar_"] {
-  display:none;
-}
 
-/* show full about me */
-[style="-webkit-line-clamp: 6;"] {
-  -webkit-line-clamp: 10000000 !important;
-}
-
-/* Usually I don't like simply linking, but in this case its probably good to just do so. */
-@import url('https://raw.githubusercontent.com/MrDiamondDog/noUglyIconsTheme/master/theme.css');
-
-
-// Revert the change to codeblock font
-// TheKodeToad
-// 706152404072267788
+/* use old font for codeblocks, by 706152404072267788 */
 :root {
     --font-code: "Consolas", "Andale Mono WT", "Andale Mono",
         "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
@@ -425,52 +166,57 @@ display: none;
 }
 
 
-
-// Hide this and future signups
-// _kokussz_
-// 1063532834805002271
+/* hide signup advertisment bullshit by 1063532834805002271 */
 [data-list-id="guildsnav"]>div>div>div:has(>div[style*="background: url(\"https://cdn.discordapp.com/assets/signups"]) {display:none}
 
-/*
-Acrylic popups
-I tried to make every popup transparent
-_kokussz_
-1063532834805002271
-*/
-@import url('https://s-k-y-l-i.github.io/discord-themes/Theme%20code/transparent-popups.css');
 
-/* Config */
-:root{
-    --blur-popup: 40px; /*Popup blur size*/
-    --opacity-popup: 0.6; /*Popup background opacity*/  
-    --radius-popup: 40px; /*Popup border radius*/
-    --radius-context: 20px; /*Context menu popups radius*/
-    /*--pop-up-color: black; /*uncomment for custom Popup color*/ 
-    /*--context-menu-border: 1px solid red; /*uncomment for custom border*/
-}
-
-
-// This snippet hides the annoying "NEW" badge for the shop:
-// Mensh123
-// 736188952742199316
+/* remove annoying "NEW" badge for shop, by 736188952742199316 */
 .textBadge__45d79{
   display: none;
 }
 
 
+/* bigger youtube embeds, by 150745989836308480 */
+[class^="embedWrapper_"]:has(iframe),
+[class^="embedWrapper_"]:has(img[src*="i.ytimg.com"]) {
+  max-width: 550px !important;
 
-/*
+  [class^="gridContainer_"] {
+    max-width: 550px !important;
+  }
 
-All CSS has been taken from the vencord 'css-snippets' channel, which states the following:
+  [class*="embedMedia_"] {
+    max-width: 550px !important;
+    max-height: unset !important;
 
-"
-imports must be from a github domain, not third party domains (for privacy and security reasons) 
-By posting in this channel you agree to license your css snippet under the https://creativecommons.org/share-your-work/public-domain/cc0/ license, which means anyone is allowed to use your snippet however they like with no attribution
-dont post low effort snippets (single display: none for example)
-Don't post off topic things. If you wanna discuss a specific snippet, please make a thread
-"
+    [class^="imageWrapper_"] {
+      max-width: 550px !important;
+      aspect-ratio: 16/9 !important;
 
-*/
+      img {
+        max-width: 550px !important;
+        max-height: unset !important;
+        aspect-ratio: 16/9 !important;
+      }
+    }
+
+    & > [class^="embedVideo_"] {
+      max-width: 550px !important;
+      aspect-ratio: 16/9;
+      padding: 0 !important;
+
+      & > iframe {
+        max-width: unset !important;
+        max-height: unset !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
 
 
-
+/* Disable the super reaction ad pop up when u click on one, by 1038809506899042445
+.reaction_fef95b[style*="background"] {
+  pointer-events: none;
+}
